@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+.petite {
+    font-family: 'Petit Formal Script';
+}
+
+.vidaloka{
+    font-family: 'vidaloka', 'Times New Roman', Times, serif;
+}
+
