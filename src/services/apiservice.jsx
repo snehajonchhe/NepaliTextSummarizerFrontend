@@ -1,18 +1,31 @@
 import axios from "axios";
 
-const API_URL = "http://127.0.0.1:5000/api"
+const API_URL = "http://127.0.0.1:9000/api"
 
 export const postApiCall = async ({ endpoint, data }) => {
     try {
-        console.log(data.data);
         const response = await axios.post(API_URL + endpoint, data.data);
-        console.log(response);
         return response.data;
     } catch (error) {
         console.error(error);
         return error;
     }
 }
+
+export const uploadAudioCall = async ({ endpoint, formData }) => {
+    try {
+        const response = await axios.post(API_URL + endpoint, formData, {
+            headers: {
+                'Content-Type': 'multipart/form-data'
+            }
+        });
+        return response.data;
+    } catch (error) {
+        console.error(error);
+        throw error;
+    }
+}
+
 
 export const getApiCall = async ({ endpoint }) => {
     try {
