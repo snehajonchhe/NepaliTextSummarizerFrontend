@@ -47,6 +47,19 @@ const About = () => {
                             <h3 className="member-name">Muskan Jonchhe</h3>
                             <p className="member-roll-no">KCE078BCT026</p>
                         </div>
+                        <div className="team-member-card">
+                            <h3 className="member-name">Shristi Kayastha</h3>
+                            <p className="member-roll-no">KCE078BCT038</p>
+                        </div>
+                        <div className="team-member-card">
+                            <h3 className="member-name">Suprishma Maharjan</h3>
+                            <p className="member-roll-no">KCE078BCT043</p>
+                        </div>
+                        <div className="team-member-card">
+                            <h3 className="member-name">Ashish Khatri</h3>
+                            <p className="member-roll-no">KCE078BCT001</p>
+                        </div>
+
 
                     </div>
                 </div>
